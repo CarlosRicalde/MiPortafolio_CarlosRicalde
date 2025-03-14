@@ -1,0 +1,1115 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    background-size: cover;
+    font-family: 'Roboto Mono';
+}
+
+nav {
+    background-color: #000000;
+    padding: 20px 30px;
+}
+
+.listades {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.item a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #FFF703;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.item a:hover {
+    transform: translateY(5px) scale(1.1);
+    color: white;
+}
+
+
+.idioma-container {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+}
+
+.idioma {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.sobremi-container{
+    display: flex;
+}
+
+.sobremi {
+    width: 2300px;
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+.sobremi .name {
+    font-size: 54px;
+    font-weight: bold;
+}
+
+
+.work {
+    color: #FFF703;
+}
+
+
+.present {
+    margin-top: 7%;
+    padding-right: 10%;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.foto-yo {
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+.foto-yo img{
+    margin-top: 15%;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.5s ease; /* Transición suave */
+}
+
+.foto-yo img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al 105% */
+}
+
+.cuentas {
+    display: flex;
+    align-items: center;
+    width: 80%; /* Opcional: Ajusta el ancho del contenedor */
+    gap: 20px;
+}
+
+.cuentas .cv {
+    background-color: #FFF703;
+    color: #000000;
+    border-radius: 15px;
+    padding: 5px 15px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.linkedin {
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.github {
+    margin-left: 1%;
+    cursor: pointer;
+    padding-left: 0;
+}
+
+.cuentas a {
+    display: inline-block; /* Agregamos display: inline-block */
+}
+
+.cuentas a img.github {
+    width: 60%; /* Definimos el ancho aquí */
+    height: auto;
+}
+
+.space-line {
+    border: none;
+    border-top: 1px solid #FFF703;
+    background-color: #FFF703;
+    width: 60%;
+    margin: 7vh auto;
+}
+
+.sub {
+    text-align: center;
+}
+
+.tecnologias-grid {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: #19191B;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    border: 2px solid white;
+    height: 60%;
+    width: 90%;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.grid-item:hover {
+    background-color: #28282B; /* Fondo más oscuro */
+    border-color: #FFF703; /* Borde gris claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+
+.grid-item img {
+    margin-left: 0;
+    width: 20%;
+    height: auto;
+}
+
+.grid-item p{
+    margin: 20px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.herramientas-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.herramientas-contain {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    gap: 20px;
+}
+
+.h-item {
+    background-color: #19191B;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    border: 2px solid white;
+    height: 60%;
+    width: 40%;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transiciones */
+}
+
+.h-item:hover {
+    background-color: #28282B; /* Fondo más oscuro */
+    border-color: #FFF703; /* Borde gris claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.h-item img {
+    margin-left: 0;
+    width: 20%;
+    height: auto;
+}
+
+.h-item p {
+    margin: 20px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+.proyectos {
+    margin-top: 50px;
+}
+
+.proyecto-web {
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+    background-color: #19191B;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.carrusel{
+    background-color: #19191B;
+    text-align: center;
+}
+
+
+.carrusel img {
+    cursor: pointer;
+    margin: 30px 40px;
+    width: 350px;
+    height: 220px;
+    border: 2px solid #FFF703;
+    object-fit: contain; /* Ajusta la imagen dentro del marco */
+    background-color: black;
+}
+
+.imagen-carrusel {
+    position: relative;
+}
+
+.imagen-carrusel img {
+    display: block;
+}
+
+
+.flecha-izquierda, .flecha-derecha {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta el centrado vertical */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white; /* Color del texto */
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.flecha-izquierda {
+    left: 5px; /* Posición izquierda */
+}
+
+.flecha-derecha {
+    right: 5px; /* Posición derecha */
+}
+
+
+.boton-git {
+    background-color: #19191B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.boton-git button {
+    border: 2px solid #FFF703;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 15px;
+    font-size: 11px;
+    padding: 2px 4px;
+    height: 35px;
+    width: 100px;
+    min-width: 0;
+    min-height: 0;
+    gap: 2px;
+    margin: 5px auto;
+    margin-top: 0;
+}
+
+.boton-git button img {
+    border: none;
+    width: 25px;
+    height: auto;
+    max-width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.title-p h2 {
+    margin-top: 25px;
+    padding-left: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.title-p p {
+    padding-left: 1%;
+    padding-right: 5%;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.tec-usadas {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    padding-right: 70px;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.tec-usadas img {
+    width: 30px;
+    height: auto;
+}
+
+/*                    ---------PANTALLA MODAL ----- DE APP WEB  ------------------                 */
+
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posición fija para superponer el contenido */
+    z-index: 1; /* Asegura que esté encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilita el desplazamiento si la imagen es muy grande */
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semitransparente */
+}
+
+
+.modal-contenido {
+    margin: auto;
+    display: block;
+    max-width: 90%; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 90%;
+}
+
+
+.cerrar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.flecha-modal {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF703;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.flecha-izquierda-modal {
+    left: 10px;
+}
+
+.flecha-derecha-modal {
+    right: 10px;
+}
+
+/*                    --------- """"!!!FIN!!!!"""" PANTALLA MODAL ----- DE APP WEB  */              
+
+.p-appmovil {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    border-radius: 20px;
+    background-color: #19191B;
+    display: flex;
+    overflow: hidden;
+}
+
+.app-carrusel {
+    background-color: #19191B;
+    text-align: center;
+}
+
+.app-carrusel img {
+    cursor: pointer;
+    margin: 30px 40px;
+    width: 350px;
+    height: 220px;
+    border: 2px solid #FFF703;
+    object-fit: contain; /* Ajusta la imagen dentro del marco */
+    background-color: black;
+}
+
+.app-imagen-carru {
+    position: relative;
+}
+
+.app-imagen-carru img {
+    display: block;
+}
+
+
+.app-git {
+    background-color: #19191B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.app-git button {
+    border: 2px solid #FFF703;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 15px;
+    font-size: 11px;
+    padding: 2px 4px;
+    height: 35px;
+    width: 100px;
+    min-width: 0;
+    min-height: 0;
+    gap: 2px;
+    margin: 5px auto;
+    margin-top: 0;
+}
+
+.app-git button img {
+    border: none;
+    width: 25px;
+    height: auto;
+    max-width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.app-title h2 {
+    margin-top: 25px;
+    padding-left: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.app-title p {
+    padding-left: 1%;
+    padding-right: 5%;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.app-tecnologias {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    padding-right: 47%;
+    padding-top: 5px;
+    padding-left: 12px;
+    margin-top: 10%;
+}
+
+.app-tecnologias img {
+    width: 30px;
+    height: auto;
+}
+
+/*                    ---------PANTALLA MODAL ----- DE APP MOVIL  ------------------                 */
+
+.modal-app {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posición fija para superponer el contenido */
+    z-index: 1; /* Asegura que esté encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Habilita el desplazamiento si la imagen es muy grande */
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo semitransparente */
+}
+
+.modal-contenido-app {
+    margin: auto;
+    display: block;
+    max-width: 90%; /* Ajusta el tamaño máximo de la imagen */
+    max-height: 90%;
+}
+
+
+.cerrar-app {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.cerrar-app:hover,
+.cerrar-app:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.flecha-modal-app {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF703;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.flecha-izquierda-modal-app {
+    left: 10px;
+}
+
+.flecha-derecha-modal-app {
+    right: 10px;
+}
+
+
+/*                    --------- """"!!!FIN!!!!"""" PANTALLA MODAL ----- DE APP MOVIL-------  */ 
+
+
+
+.pie {
+    margin-top: 60px;
+    background-color: #19191B;
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    height: 100%;
+    padding: 5%;
+    position: relative;
+}
+
+.email {
+    height: 80px;
+    margin-top: 40px;
+}
+
+.email-icono {
+    height: 100px;
+    transform: rotate(10deg);
+}
+
+.copy-email {
+    margin-top: 30px;
+    background-color: #FFF703;
+    color: #000000;
+    padding: 5px 15px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.tilde-copiado {
+    color: rgb(52, 226, 52);
+    visibility: hidden;
+    margin-left: 5px; /* Espacio entre el botón y el tilde */
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+
+.copy-email.clicked + .tilde-copiado {
+    visibility: visible; /* Mostrar el tilde cuando se hace clic en el botón */
+}
+
+
+
+/* -------------------- MEDIA QUERYS PANTALLA MEDIANA ----------------------------*/
+
+
+
+@media (max-width: 991px) {
+    .listades {
+        gap: 30px; /* Reducimos el espacio entre los items */
+    }
+
+    .item a {
+        font-size: 25px; /* Reducimos el tamaño de la fuente */
+    }
+
+    .sobremi {
+        width: 1500px;
+    }
+
+    .sobremi .name {
+        font-size: 42px; /* Reducimos el tamaño de la fuente del nombre */
+    }
+
+    .work {
+        font-size: 20px; /* Reducimos el tamaño de la fuente del trabajo */
+    }
+
+    .present {
+        width: 100%; /* Aumentamos el ancho de la presentación */
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 30px;
+    }
+
+
+    .foto-yo {
+        margin: auto;
+        margin-right: 30px;
+        width: 100%; /* Ajustamos el ancho de la foto */
+    }
+
+
+    .cuentas {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-container .grid-item:nth-child(7),
+    .grid-container .grid-item:nth-child(8),
+    .grid-container .grid-item:nth-child(9),
+    .grid-container .grid-item:nth-child(10) {
+        grid-column: auto;
+    }
+
+
+    .grid-container .grid-item:nth-child(7) {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+
+    .herramientas-contain {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .h-item {
+        width: 25%;
+        height: 57%;
+    }
+
+
+    .h-item img {
+        width: 20%; /* Permite que la imagen se ajuste a su tamaño original */
+        height: auto;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .proyecto-web {
+        display: block;
+    
+    }
+
+    .proyecto-web > div { /* Selecciona los divs hijos directos */
+        width: 100%; /* Ocupan todo el ancho */
+    }
+
+    .tec-usadas {
+        order: 3; /* Las tecnologías van tercero */
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+
+    .title-p h2 {
+        margin-top: 0;
+        margin-bottom: 3%;
+    }
+
+    .title-p p {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0;
+        text-align: justify;
+    }
+
+
+    .carrusel {
+        text-align: center;
+        display: flex; /* Añade flexbox */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+    }
+
+    .imagen-carrusel {
+        margin-left: 17%;
+    }
+
+
+
+    .boton-git {
+        margin-left: 2%;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .p-appmovil {
+        display: block;
+    
+    }
+
+    .app-carrusel > div { /* Selecciona los divs hijos directos */
+        width: 100%; /* Ocupan todo el ancho */
+    }
+
+    .app-tecnologias {
+        order: 3; /* Las tecnologías van tercero */
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        padding-top: 0;
+    }
+
+    .app-title h2 {
+        margin-top: 0;
+        margin-bottom: 3%;
+    }
+
+    .app-title p {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0;
+        text-align: justify;
+    }
+
+
+    .app-carrusel {
+        text-align: center;
+        display: flex; /* Añade flexbox */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+    }
+
+    .app-imagen-carru {
+        margin-left: 19%;
+    }
+
+
+
+    .app-git {
+        margin: 0;
+    }
+}
+
+
+/* -------------------------MEDIA QUERYS PANTALLAS PEQUEÑAS-----------------------------*/
+
+@media (max-width: 767px) {
+    .listades {
+        flex-direction: column; /* Cambiamos la dirección a columna */
+        align-items: center; /* Centramos los items */
+        gap: 15px; /* Reducimos aún más el espacio */
+    }
+
+    .item a {
+        font-size: 20px; /* Reducimos aún más el tamaño de la fuente */
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .sobremi-container {
+        flex-direction: column; /* Cambiamos a columna */
+        align-items: center; /* Centramos horizontalmente */
+    }
+
+    .foto-yo {
+        margin: 0 auto 20px; /* Ajustamos márgenes */
+        width: 100%; /* Ajustamos el ancho de la foto */
+        order: -1;
+    }
+
+    .foto-yo img {
+        margin-top: 0; /* Eliminamos margen superior */
+        width: 40%;
+        display: block; /* Convertimos la imagen en un bloque */
+        margin-left: auto; /* Centramos horizontalmente */
+        margin-right: auto; /* Centramos horizontalmente */
+    }
+
+    .sobremi {
+        width: 90%; /* Ajustamos el ancho del texto */
+        margin: 20px auto; /* Ajustamos márgenes */
+    }
+
+    .sobremi .name {
+        font-size: 36px; /* Reducimos el tamaño de la fuente */
+        text-align: center; /* Centramos el texto */
+    }
+
+
+    .work {
+        text-align: center;
+    }
+
+    .present {
+        padding-right: 0; /* Eliminamos padding */
+        text-align: center; /* Centramos el texto */
+    }
+
+    .cuentas {
+        display: flex;
+        align-items: center;
+        width: 100%; /* Opcional: Ajusta el ancho del contenedor */
+        gap: 20px;
+        justify-content: center;
+    }
+
+
+    .cuentas .cv {
+        margin-left: 40px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+
+    .grid-container .grid-item {
+        width: 100%; /* Las cajas ocupan todo el ancho */
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .herramientas-contain {
+        justify-content: center;
+        width: 90%;
+    }
+
+    .h-item {
+        width: 80%;
+        margin: 0;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    .proyecto-web {
+        display: block; /* Cambia a bloque para apilar elementos */
+    }
+
+    .proyecto-web > div { /* Selecciona los divs hijos directos */
+        width: 100%; /* Ocupan todo el ancho */
+    }
+
+    .tec-usadas {
+        order: 4; /* Las tecnologías van cuarto */
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+
+    .title-p p {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0;
+        text-align: justify;
+    }
+
+    .carrusel {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+        order: 1; /* El carrusel va primero */
+    }
+
+    .imagen-carrusel {
+        margin: 0; /* Elimina el margen izquierdo */
+        width: 100%; /* El carrusel ocupa todo el ancho */
+    }
+
+    .imagen-carrusel img {
+        width: 80%; /* La imagen ocupa todo el ancho del contenedor */
+        display: block; /* Asegura que la imagen sea un bloque */
+        object-fit: contain; /* Ajusta la imagen dentro del marco */
+        background-color: black;
+    }
+    
+    .boton-git {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        order: 2; /* El botón de Git va segundo */
+        margin-top: 20px; /* Añade margen superior para separarlo del carrusel */
+    }
+
+    .title-p {
+        order: 3; /* El texto va tercero */
+    }
+
+    .title-p h2 {
+        margin-top: 4%;
+        margin-bottom: 6%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .p-appmovil {
+        display: block; /* Cambia a bloque para apilar elementos */
+    }
+
+    .p-appmovil > div { /* Selecciona los divs hijos directos */
+        width: 100%; /* Ocupan todo el ancho */
+    }
+
+    .app-tecnologias {
+        order: 4; /* Las tecnologías van cuarto */
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+
+    .app-title p {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0;
+        text-align: justify;
+    }
+
+    .app-carrusel {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+        order: 1; /* El carrusel va primero */
+    }
+
+    .app-imagen-carru {
+        margin: 0; /* Elimina el margen izquierdo */
+        width: 100%; /* El carrusel ocupa todo el ancho */
+    }
+
+    .app-imagen-carru img {
+        width: 80%; /* La imagen ocupa todo el ancho del contenedor */
+        display: block; /* Asegura que la imagen sea un bloque */
+        object-fit: contain; /* Ajusta la imagen dentro del marco */
+        background-color: black;
+    }
+    
+    .app-git {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        order: 2; /* El botón de Git va segundo */
+        margin-top: 20px; /* Añade margen superior para separarlo del carrusel */
+    }
+
+    .app-title {
+        order: 3; /* El texto va tercero */
+    }
+
+    .app-title h2 {
+        margin-top: 4%;
+        margin-bottom: 6%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .contact {
+        margin-top: 0;
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .email-icono {
+        order: 1; /* El icono va primero */
+        margin-top: 0; /* Elimina el margen superior */
+    }
+
+    .email {
+        order: 2; /* El email va segundo */
+        margin-top: 10px; /* Añade margen superior */
+    }
+
+    .boton-titulo {
+        display: flex; /* Añade flexbox */
+        width: 100%;
+        order: 3;
+        padding: auto;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente (opcional) */
+    }
+
+    .copy-email {
+        order: 3; /* El botón va tercero */
+        padding: 10px 20px; /* Añade padding para mejor apariencia */
+        text-align: center;
+        background-color: #FFF703; /* Mantén el color de fondo */
+        color: #000000; /* Mantén el color del texto */
+        border: 2px solid black; /* Mantén el borde */
+        cursor: pointer; /* Mantén el cursor pointer */
+        margin-left: 40px;
+        margin-top: 0;
+    }
+
+    
+
+
+    .tilde-copiado {
+        order: 3; /* Coloca el tilde junto al botón */
+        margin-top: 0; /* Alinea con el botón */
+        margin-left: 10px; /* Mantiene el espacio entre botón y tilde */
+        display: inline-block;
+    }
+
+    .copy-email.clicked + .tilde-copiado {
+        visibility: visible;
+    }
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
