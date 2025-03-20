@@ -1,9 +1,21 @@
 const imagenes = [
-    "images/P_PRINCIPAL1.png",
-    "images/P_INICIO_SESION2.png",
-    "images/PAGINA - JUGADORES.png",
-    "images/PAGINA - LIGA.png",
-    "images/PAGINA - PARTIDO - LIGA.png"
+    "images/PAGINA_INICIO.png",
+    "images/PAGINA_LOGIN.png",
+    "images/PAGINA_RESUMEN.png",
+    "images/PAGINA_TORNEOS.png",
+    "images/PAGINA_TEMPORADAS.png",
+    "images/PAGINA_EQUIPOS.png",
+    "images/PAGINA_DELEGADOS.png",
+    "images/PAGINA_JUGADORES.png",
+    "images/PAGINA_TRASPASOS.png",
+    "images/PAGINA_ZONAS.png",
+    "images/PAGINA_PLANTEL.png",
+    "images/PAGINA_FECHAS.png",
+    "images/PAGINA_PLANTILLA_1.png",
+    "images/PAGINA_PLANTILLA_2.png",
+    "images/PAGINA_USUARIO_TORNEOS.png",
+    "images/PAGINA_TEMPORADA_1.png",
+    "images/PAGINA_TEMPORADA_2.png",
 ];
 let indiceImagenActual = 0;
 const imagenCarrusel = document.getElementById("foto-carrusel");
@@ -47,16 +59,36 @@ window.onclick = function(event) {
 
 const flechaIzquierdaModal = document.querySelector(".flecha-izquierda-modal");
 const flechaDerechaModal = document.querySelector(".flecha-derecha-modal");
+const imagenModalFlecha = document.getElementById("imagen-modal");
+
+function centrarFlechas() {
+    const flechas = document.querySelectorAll(".flecha-modal");
+
+    if (imagenModalFlecha && flechas.length > 0) {
+        let alturaImagen = imagenModal.clientHeight; // Obtiene la altura actual de la imagen
+        let posicionCentro = imagenModal.offsetTop + (alturaImagen / 2); // Calcula el centro
+
+        flechas.forEach(flecha => {
+            flecha.style.top = `${posicionCentro}px`; // Aplica la posición calculada
+        });
+    }
+}
 
 flechaDerechaModal.addEventListener("click", () => {
     indiceImagenActual = (indiceImagenActual + 1) % imagenes.length;
     imagenModal.src = imagenes[indiceImagenActual];
+    setTimeout(centrarFlechas, 50); // Asegura que la imagen haya cargado antes de centrar las flechas
 });
 
 flechaIzquierdaModal.addEventListener("click", () => {
     indiceImagenActual = (indiceImagenActual - 1 + imagenes.length) % imagenes.length;
     imagenModal.src = imagenes[indiceImagenActual];
+    setTimeout(centrarFlechas, 50);
 });
+
+// Centrar flechas cuando la imagen cambia
+imagenModal.onload = centrarFlechas;
+
 
 
 
