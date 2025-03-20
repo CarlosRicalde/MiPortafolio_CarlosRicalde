@@ -1271,10 +1271,6 @@ a {
         height: auto;
     }
 
-    .proyectos{
-        background-color: aqua;
-    }
-
 
     .proyecto-web {
         margin-left: 10%;
@@ -1325,7 +1321,7 @@ a {
     }
 
     .imagen-carrusel img {
-        width: 76%; /* La imagen ocupa todo el ancho del contenedor */
+        width: 74%; /* La imagen ocupa todo el ancho del contenedor */
         display: block; /* Asegura que la imagen sea un bloque */
         object-fit: contain; /* Ajusta la imagen dentro del marco */
         background-color: black;
