@@ -68,11 +68,33 @@ nav {
 .work {
     color: #FFF703;
     font-size: 30px;
+    display: inline-block; /* Para que el cursor se coloque correctamente */
+}
+
+/* Estilo para el cursor (la línea vertical) */
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 30px;
+    background-color: #FFF703;
+    margin-left: 5px;
+    animation: parpadeo 0.7s infinite; /* Animación de parpadeo */
+    vertical-align: middle;
+}
+
+/* Animación de parpadeo para el cursor */
+@keyframes parpadeo {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 
 .present {
-    margin-top: 7%;
+    margin-top: 3%;
     padding-right: 10%;
     text-align: start;
     font-size: 16px;
@@ -364,7 +386,7 @@ nav {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Habilita el desplazamiento si la imagen es muy grande */
+    overflow: hidden; /* Habilita el desplazamiento si la imagen es muy grande */
     background-color: rgba(0, 0, 0, 0.9); /* Fondo semitransparente */
 }
 
@@ -527,7 +549,7 @@ nav {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Habilita el desplazamiento si la imagen es muy grande */
+    overflow: hidden; /* Habilita el desplazamiento si la imagen es muy grande */
     background-color: rgba(0, 0, 0, 0.9); /* Fondo semitransparente */
 }
 
@@ -656,7 +678,7 @@ nav {
     }
 
     .work {
-        font-size: 20px; /* Reducimos el tamaño de la fuente del trabajo */
+        font-size: 30px; /* Reducimos el tamaño de la fuente del trabajo */
     }
 
     .present {
@@ -664,7 +686,7 @@ nav {
         margin-left: 0;
         margin-right: 0;
         padding-right: 30px;
-        text-align: center;
+        text-align: left;
     }
 
 
@@ -882,7 +904,8 @@ nav {
 
     .work {
         text-align: center;
-        font-size: 22px;
+        font-size: 24px;
+        width: 100%;
     }
 
     .present {
@@ -1109,7 +1132,7 @@ nav {
 
     .modal-contenido {
         max-height: 70vh;
-        margin: 28vh auto;
+        margin: 35vh auto;
         display: block;
         max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
         
@@ -1192,7 +1215,7 @@ a {
 
     .foto-yo img {
         margin-top: 0; /* Eliminamos margen superior */
-        width: 50%;
+        width: 55%;
         display: block; /* Convertimos la imagen en un bloque */
         margin-left: auto; /* Centramos horizontalmente */
         margin-right: auto; /* Centramos horizontalmente */
@@ -1212,6 +1235,7 @@ a {
     .work {
         text-align: center;
         font-size: 20px;
+        width: 100%;
     }
 
     .present {
@@ -1468,12 +1492,20 @@ a {
         visibility: visible;
     }
 
+    .modal {
+        overflow: hidden;
+    }
+
     .modal-contenido {
         max-height: 70vh;
-        margin: 30vh auto;
+        margin: 40vh auto;
         display: block;
         max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
         
+    }
+
+    .modal-app {
+        overflow: hidden;
     }
 
     .modal-contenido-app {

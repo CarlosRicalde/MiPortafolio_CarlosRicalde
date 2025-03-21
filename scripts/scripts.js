@@ -245,27 +245,77 @@ const traducciones = {
 
 
 
+// Función para traducir y reiniciar la animación con el nuevo idioma
+function traducir(idioma) {
+    const traduccion = traducciones[idioma];  
+    for (const id in traduccion) {  
+        const elemento = document.getElementById(id);  
+        if (elemento) {  
+            elemento.textContent = traduccion[id];  
+        }  
+    }
+
+    // 🆕 Cambiar los textos animados y reiniciar la animación
+    textos = [traduccion.trabajo1, traduccion.trabajo2];  
+    indexTexto = 0;
+    indexLetra = 0;
+    estaBorrando = false;
+    
+    typewriter();  // Reinicia la animación con la nueva traducción
+}
+
+// Eventos para cambiar idioma
 const banderaIngles = document.querySelector(".idioma-container img:first-child");
 const banderaEspana = document.querySelector(".idioma-container img:last-child");
 
-banderaIngles.addEventListener("click", () => {
-    traducir("ingles");
-});
+banderaIngles.addEventListener("click", () => traducir("ingles"));
+banderaEspana.addEventListener("click", () => traducir("espanol"));
 
-banderaEspana.addEventListener("click", () => {
-    traducir("espanol");
-});
 
-function traducir(idioma) {
-    const traduccion = traducciones[idioma];
-    for (const id in traduccion) {
-        const elemento = document.getElementById(id);
-        if (elemento) {
-            elemento.textContent = traduccion[id];
+
+// ------------------------- TYPER WITTER ------------------------
+
+const textoAnimado = document.getElementById("texto-animado");
+const cursor = '<span class="cursor"></span>';
+let idiomaActual = "espanol"; // Idioma por defecto
+
+// Función para obtener los textos según el idioma
+function obtenerTextos() {
+    return [traducciones[idiomaActual].trabajo1, traducciones[idiomaActual].trabajo2];
+}
+
+// Variables para el efecto typewriter
+let textos = obtenerTextos();
+let indexTexto = 0;
+let indexLetra = 0;
+let estaBorrando = false;
+let intervaloEscritura; // Variable para guardar el ID del setTimeout
+
+function typewriter() {
+    // Limpia el timeout anterior para evitar acumulación
+    clearTimeout(intervaloEscritura);
+
+    const textoActual = textos[indexTexto];
+
+    if (!estaBorrando && indexLetra <= textoActual.length) {
+        textoAnimado.innerHTML = textoActual.substring(0, indexLetra) + cursor;
+        indexLetra++;
+        intervaloEscritura = setTimeout(typewriter, 100);
+    } else if (estaBorrando && indexLetra >= 0) {
+        textoAnimado.innerHTML = textoActual.substring(0, indexLetra) + cursor;
+        indexLetra--;
+        intervaloEscritura = setTimeout(typewriter, 100);
+    } else {
+        estaBorrando = !estaBorrando;
+        if (!estaBorrando) {
+            indexTexto = (indexTexto + 1) % textos.length;
         }
+        intervaloEscritura = setTimeout(typewriter, 100);
     }
 }
 
+// Iniciar animación al cargar la página
+window.onload = typewriter;
 
 
 
