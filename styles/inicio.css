@@ -1392,6 +1392,8 @@ a {
         flex-wrap: wrap;
         padding: 20px 0;
         padding-top: 0;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .app-title p {
@@ -1437,6 +1439,9 @@ a {
     .app-title h2 {
         margin-top: 4%;
         margin-bottom: 6%;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
     }
 
 
