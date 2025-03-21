@@ -1267,11 +1267,17 @@ a {
 
 
     .grid-container {
+        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 2 columnas */
+        gap: 15px;
     }
 
     .grid-container .grid-item {
         width: 100%; /* Las cajas ocupan todo el ancho */
+    }
+
+    .grid-item p{
+        margin-left: 6px;
     }
 
     .grid-item img {
@@ -1503,7 +1509,7 @@ a {
 
     .modal-contenido {
         max-height: 70vh;
-        margin: 40vh auto;
+        margin: 36vh auto;
         display: block;
         max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
         
